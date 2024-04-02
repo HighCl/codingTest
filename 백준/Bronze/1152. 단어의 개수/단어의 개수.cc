@@ -26,7 +26,14 @@ int main()
 	std::cout.tie(NULL);
 
 	string str;
-	std::getline(cin, str);
+	int blankCnt = 0;
+	getline(cin, str);
+
+	if (str.length() == 0)
+	{
+		cout << 0;
+		return 0;
+	}
 
 	if (str.length() == 1 && str[0] == ' ')
 	{
@@ -34,23 +41,20 @@ int main()
 		return 0;
 	}
 
-	while (str[0] == ' ')
+	auto firstIter = str.begin() + str.find_first_not_of(" ");
+	auto endIter = str.begin() + str.find_last_not_of(" ") + 1;
+	for (; firstIter != endIter; firstIter++)
 	{
-		str.erase(0, 1);
-	}
-	while (str[str.length() - 1] == ' ')
-	{
-		str.erase(str.length() - 1, 1);
-	}
-
-	int blankCnt = 0;
-	for (size_t i = 0; i < str.size(); i++)
-	{
-		if (str[i] == ' ')
-		{
+		if (*firstIter == ' ')
 			blankCnt++;
-		}
 	}
-
 	cout << blankCnt + 1;
+
+	//blankCnt = 0;
+	//for (size_t i = str.find_first_not_of(" "); i < str.find_last_not_of(' ') + 1; i++)
+	//{
+	//	if (str[i] == ' ')
+	//		blankCnt++;
+	//}
+	//cout << blankCnt + 1;
 }
