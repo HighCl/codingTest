@@ -4,7 +4,6 @@
 #include <algorithm>
 using namespace std;
 
-int arr[2250000];
 int n;
 
 int main()
@@ -13,15 +12,24 @@ int main()
 	cin.tie(NULL);
 	cout.tie(NULL);
 
+	priority_queue<int, vector<int>, greater<int>> pq;
 	//입력
 	cin >> n;
 
 	int repeatCnt = n * n;
+	int pqCnt = 0;
+	int temp;
 	for (int i = 0; i < repeatCnt; i++)
 	{
-		cin >> arr[i];
+		cin >> temp;
+		pq.push(temp);
+		pqCnt++;
+
+		if (pqCnt > n)
+		{
+			pq.pop();
+		}
 	}
 
-	sort(arr, arr + n * n);
-	cout << arr[n * n - n] << endl;
+	cout << pq.top();
 }
