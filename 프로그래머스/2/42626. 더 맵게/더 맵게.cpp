@@ -1,33 +1,37 @@
 #include <iostream>
+#include <string>
+#include <vector>
 #include <queue>
+#include <set>
+#include <algorithm>
 using namespace std;
 
-priority_queue<int, vector<int>, greater<int>> pq;
+multiset<int> scovilleSet;
 
 int solution(vector<int> scoville, int K)
 {
-	for (size_t i = 0; i < scoville.size(); i++)
+	for (auto var : scoville)
 	{
-		pq.push(scoville[i]);
+		scovilleSet.insert(var);
 	}
 
 	int repeatCnt = 0;
-	while (pq.top() < K)
+	while (*scovilleSet.begin() < K)
 	{
-		if (pq.size() == 1)
+		if (scovilleSet.size() == 1)
 		{
 			repeatCnt = -1;
 			break;
 		}
 
 		repeatCnt++;
-		int food1 = pq.top();
-		pq.pop();
-		int food2 = pq.top();
-		pq.pop();
+		int food1 = *scovilleSet.begin();
+		scovilleSet.erase(scovilleSet.begin());
+		int food2 = *scovilleSet.begin();
+		scovilleSet.erase(scovilleSet.begin());
 
 		int mix = food1 + food2 * 2;
-		pq.push(mix);
+		scovilleSet.insert(mix);
 	}
 
 	return repeatCnt;
