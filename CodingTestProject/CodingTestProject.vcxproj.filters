@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Graph">
+      <UniqueIdentifier>{13ca58df-9d2d-415a-9c28-697ff9687915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\_Util">
+      <UniqueIdentifier>{adc4bfb2-a531-4823-9630-4b86572ae079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Sort">
+      <UniqueIdentifier>{6f6d6375-5775-4a08-92d7-2efbad628d33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Maze">
+      <UniqueIdentifier>{2729352b-3b6b-4b01-9049-a43d4eac36a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\DP">
+      <UniqueIdentifier>{1369109f-5591-4268-b873-e931b388cc89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="depth_first_search.cpp">
+      <Filter>소스 파일\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapSort.cpp">
+      <Filter>소스 파일\Sort</Filter>
+    </ClCompile>
+    <ClCompile Include="breadth_first_search.cpp">
+      <Filter>소스 파일\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Template.h">
+      <Filter>소스 파일\_Util</Filter>
+    </ClCompile>
+    <ClCompile Include="bfsMaze.cpp">
+      <Filter>소스 파일\Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="dfsMaze.cpp">
+      <Filter>소스 파일\Maze</Filter>
+    </ClCompile>
+    <ClCompile Include="fibonacci.cpp">
+      <Filter>소스 파일\DP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Util.h">
+      <Filter>소스 파일\_Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

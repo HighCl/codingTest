@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+           <Title>Timer</Title>
+           <Author>HighCl</Author>
+           <Description>Create Timer</Description>
+           <Shortcut>tm</Shortcut>
+        </Header>
+        <Snippet>
+            <Declarations>
+              <Literal>
+                <ID>name</ID>
+                <ToolTip>이름</ToolTip>
+                <Default>PrintMethod</Default>
+              </Literal>
+            </Declarations>
+            <Code Language="cpp">
+                <![CDATA[clock_t start = clock();
+				
+				clock_t finish = clock();
+	            double duration = (double)(finish - start) / CLOCKS_PER_SEC;
+	            std::cout << endl << endl << duration << "sec" << endl;]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
