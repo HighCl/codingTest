@@ -1,17 +1,6 @@
 ﻿//#include "Util.h"
 
-#include <iostream>
-#include <iterator>
-#include <string>
-#include <stack>
-#include <vector>
-#include <map>
-#include <algorithm>
-#include <queue>
-#include <deque>
-#include <list>
-#include <set>
-#include <type_traits>
+#include <bits/stdc++.h>
 using namespace std;
 
 #pragma region PrintFunction

@@ -33,31 +33,37 @@
     <ClCompile Include="Test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="depth_first_search.cpp">
+    <ClCompile Include="Algorithm\dfs\depth_first_search.cpp">
       <Filter>소스 파일\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="HeapSort.cpp">
+    <ClCompile Include="Algorithm\HeapSort.cpp">
       <Filter>소스 파일\Sort</Filter>
-    </ClCompile>
-    <ClCompile Include="breadth_first_search.cpp">
-      <Filter>소스 파일\Graph</Filter>
     </ClCompile>
     <ClCompile Include="Template.h">
       <Filter>소스 파일\_Util</Filter>
     </ClCompile>
-    <ClCompile Include="bfsMaze.cpp">
+    <ClCompile Include="Algorithm\dfs\dfsMaze.cpp">
       <Filter>소스 파일\Maze</Filter>
     </ClCompile>
-    <ClCompile Include="dfsMaze.cpp">
-      <Filter>소스 파일\Maze</Filter>
-    </ClCompile>
-    <ClCompile Include="fibonacci.cpp">
+    <ClCompile Include="Algorithm\fibonacci.cpp">
       <Filter>소스 파일\DP</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm\bfs\bfsMaze.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm\bfs\breadth_first_search.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util.h">
       <Filter>소스 파일\_Util</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="Snippets\fora.snippet" />
+    <None Include="Snippets\Print(prt).snippet" />
+    <None Include="Snippets\Timer(tm).snippet" />
   </ItemGroup>
 </Project>

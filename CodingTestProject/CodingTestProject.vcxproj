@@ -128,17 +128,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="depth_first_search.cpp" />
-    <ClCompile Include="breadth_first_search.cpp" />
-    <ClCompile Include="bfsMaze.cpp" />
-    <ClCompile Include="dfsMaze.cpp" />
-    <ClCompile Include="fibonacci.cpp" />
-    <ClCompile Include="HeapSort.cpp" />
+    <ClCompile Include="Algorithm\bfs\bfsMaze.cpp" />
+    <ClCompile Include="Algorithm\bfs\breadth_first_search.cpp" />
+    <ClCompile Include="Algorithm\dfs\depth_first_search.cpp" />
+    <ClCompile Include="Algorithm\dfs\dfsMaze.cpp" />
+    <ClCompile Include="Algorithm\fibonacci.cpp" />
+    <ClCompile Include="Algorithm\HeapSort.cpp" />
     <ClCompile Include="Template.h" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="Snippets\fora.snippet" />
+    <None Include="Snippets\Print(prt).snippet" />
+    <None Include="Snippets\Timer(tm).snippet" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
