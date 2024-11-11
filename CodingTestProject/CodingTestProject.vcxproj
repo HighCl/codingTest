@@ -134,17 +134,18 @@
     <ClCompile Include="Algorithm\dfs\dfsMaze.cpp" />
     <ClCompile Include="Algorithm\fibonacci.cpp" />
     <ClCompile Include="Algorithm\HeapSort.cpp" />
+    <ClCompile Include="PrintUtil.h" />
     <ClCompile Include="Template.h" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Util.h" />
+    <None Include=".editorconfig" />
+    <None Include="Save\Snippets\fora.snippet" />
+    <None Include="Save\Snippets\Print%28prt%29.snippet" />
+    <None Include="Save\Snippets\Timer%28tm%29.snippet" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".editorconfig" />
-    <None Include="Snippets\fora.snippet" />
-    <None Include="Snippets\Print(prt).snippet" />
-    <None Include="Snippets\Timer(tm).snippet" />
+    <ClInclude Include="Save\stdc++.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
