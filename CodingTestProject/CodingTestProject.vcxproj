@@ -128,7 +128,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithm\bfs\bfsMaze.cpp" />
     <ClCompile Include="Algorithm\bfs\breadth_first_search.cpp" />
     <ClCompile Include="Algorithm\dfs\depth_first_search.cpp" />
     <ClCompile Include="Algorithm\dfs\dfsMaze.cpp" />

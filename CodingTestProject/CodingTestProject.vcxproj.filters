@@ -48,9 +48,6 @@
     <ClCompile Include="Algorithm\fibonacci.cpp">
       <Filter>소스 파일\DP</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithm\bfs\bfsMaze.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Algorithm\bfs\breadth_first_search.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
